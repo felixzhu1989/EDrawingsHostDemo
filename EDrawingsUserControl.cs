@@ -2,7 +2,7 @@
 using System.Windows.Forms;
 using eDrawings.Interop.EModelViewControl;
 
-namespace EDrawingHost
+namespace EDrawingsHostDemo
 {
     public partial class EDrawingsUserControl : UserControl
     {
