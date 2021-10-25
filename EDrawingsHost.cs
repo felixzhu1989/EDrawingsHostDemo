@@ -2,7 +2,7 @@
 using System.Windows.Forms;
 using eDrawings.Interop.EModelViewControl;
 
-namespace EDrawingHost
+namespace EDrawingsHostDemo
 {
    public class EDrawingsHost:AxHost
    {
