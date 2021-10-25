@@ -1,5 +1,5 @@
 ﻿
-namespace EDrawingHost
+namespace EDrawingsHostDemo
 {
     partial class FrmMain
     {
