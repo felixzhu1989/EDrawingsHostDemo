@@ -4,7 +4,7 @@ using System.Windows.Forms;
 using eDrawings.Interop.EModelMarkupControl;
 using eDrawings.Interop.EModelViewControl;
 
-namespace EDrawingHost
+namespace EDrawingsHostDemo
 {
     public partial class FrmMain : Form
     {
