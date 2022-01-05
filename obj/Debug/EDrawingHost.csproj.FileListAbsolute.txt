@@ -7,3 +7,13 @@ E:\CSharp\repos\EDrawingHost\EDrawingHost\obj\Debug\EDrawingHost.csproj.CoreComp
 E:\CSharp\repos\EDrawingHost\EDrawingHost\obj\Debug\EDrawingHost.exe
 E:\CSharp\repos\EDrawingHost\EDrawingHost\obj\Debug\EDrawingHost.pdb
 E:\CSharp\repos\EDrawingHost\EDrawingHost\obj\Debug\EDrawingHost.FrmMain.resources
+D:\EDrawingsHostDemo\obj\Debug\EDrawingsHostDemo.FrmMain.resources
+D:\EDrawingsHostDemo\obj\Debug\EDrawingHost.Properties.Resources.resources
+D:\EDrawingsHostDemo\obj\Debug\EDrawingHost.csproj.GenerateResource.cache
+D:\EDrawingsHostDemo\obj\Debug\EDrawingHost.csproj.CoreCompileInputs.cache
+D:\EDrawingsHostDemo\obj\Debug\EDrawingHost.exe
+D:\EDrawingsHostDemo\obj\Debug\EDrawingHost.pdb
+D:\EDrawingsHostDemo\obj\Debug\EDrawingsHostDemo.EDrawingsUserControl.resources
+D:\EDrawingsHostDemo\bin\Debug\EDrawingHost.exe
+D:\EDrawingsHostDemo\bin\Debug\EDrawingHost.pdb
+D:\EDrawingsHostDemo\obj\Debug\EDrawingHost.csproj.AssemblyReference.cache

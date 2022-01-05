@@ -14,17 +14,24 @@ namespace EDrawingsHostDemo
         public FrmMain()
         {
             InitializeComponent();
+            //如果工具箱中没法显示自定义控件，那么就可以动态加载
+            EDrawingsUserControl ctrlEDrw = new EDrawingsUserControl();
+            ctrlEDrw.EDrawingsControlLoaded += this.OnControlLoaded;
+            ctrlEDrw.LoadEDrawings();
+            panel1.Controls.Add(ctrlEDrw);
+            ctrlEDrw.Dock = DockStyle.Fill;
         }
 
         protected override void OnShown(EventArgs e)
         {
             base.OnShown(e);
-            ctrlEDrw.LoadEDrawings();
+            // ctrlEDrw.LoadEDrawings();
         }
+
         private void OnControlLoaded(EModelViewControl ctrl)
         {
             m_EDrawingsCtrl = ctrl;
-            ctrl.OnFinishedLoadingDocument+= OnFinishedLoadingDocument;
+            ctrl.OnFinishedLoadingDocument += OnFinishedLoadingDocument;
             ctrl.OnFailedLoadingDocument += OnFailedLoadingDocument;
             //Markup
             m_EDrawingsMarkupCtrl = m_EDrawingsCtrl.CoCreateInstance("EModelViewMarkup.EModelMarkupControl") as EModelMarkupControl;
@@ -47,7 +54,7 @@ namespace EDrawingsHostDemo
             string filePath = txtFilePath.Text.Trim();
             if (!string.IsNullOrEmpty(filePath))
             {
-                if (m_EDrawingsCtrl==null)
+                if (m_EDrawingsCtrl == null)
                 {
                     throw new NullReferenceException("eDrawings control is not loaded");
                 }
@@ -59,7 +66,7 @@ namespace EDrawingsHostDemo
         private void btnBrowse_Click(object sender, EventArgs e)
         {
             OpenFileDialog ofd = new OpenFileDialog();
-            if (ofd.ShowDialog()==DialogResult.OK)
+            if (ofd.ShowDialog() == DialogResult.OK)
             {
                 txtFilePath.Text = ofd.FileName;
             }

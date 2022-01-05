@@ -32,16 +32,17 @@ namespace EDrawingsHostDemo
             this.btnOpen = new System.Windows.Forms.Button();
             this.txtFilePath = new System.Windows.Forms.TextBox();
             this.btnBrowse = new System.Windows.Forms.Button();
-            this.ctrlEDrw = new EDrawingHost.EDrawingsUserControl();
             this.txtMeasurements = new System.Windows.Forms.TextBox();
             this.btnRecordMeasurements = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // btnOpen
             // 
-            this.btnOpen.Location = new System.Drawing.Point(507, 444);
+            this.btnOpen.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnOpen.Location = new System.Drawing.Point(507, 410);
             this.btnOpen.Name = "btnOpen";
-            this.btnOpen.Size = new System.Drawing.Size(75, 23);
+            this.btnOpen.Size = new System.Drawing.Size(75, 21);
             this.btnOpen.TabIndex = 1;
             this.btnOpen.Text = "打开";
             this.btnOpen.UseVisualStyleBackColor = true;
@@ -49,62 +50,69 @@ namespace EDrawingsHostDemo
             // 
             // txtFilePath
             // 
-            this.txtFilePath.Location = new System.Drawing.Point(12, 445);
+            this.txtFilePath.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtFilePath.Location = new System.Drawing.Point(12, 411);
             this.txtFilePath.Name = "txtFilePath";
-            this.txtFilePath.Size = new System.Drawing.Size(457, 20);
+            this.txtFilePath.Size = new System.Drawing.Size(457, 21);
             this.txtFilePath.TabIndex = 2;
             // 
             // btnBrowse
             // 
-            this.btnBrowse.Location = new System.Drawing.Point(475, 444);
+            this.btnBrowse.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnBrowse.Location = new System.Drawing.Point(475, 410);
             this.btnBrowse.Name = "btnBrowse";
-            this.btnBrowse.Size = new System.Drawing.Size(26, 23);
+            this.btnBrowse.Size = new System.Drawing.Size(26, 21);
             this.btnBrowse.TabIndex = 3;
             this.btnBrowse.Text = "...";
             this.btnBrowse.UseVisualStyleBackColor = true;
             this.btnBrowse.Click += new System.EventHandler(this.btnBrowse_Click);
             // 
-            // ctrlEDrw
-            // 
-            this.ctrlEDrw.BackColor = System.Drawing.SystemColors.Control;
-            this.ctrlEDrw.Location = new System.Drawing.Point(12, 12);
-            this.ctrlEDrw.Name = "ctrlEDrw";
-            this.ctrlEDrw.Size = new System.Drawing.Size(571, 426);
-            this.ctrlEDrw.TabIndex = 0;
-            this.ctrlEDrw.EDrawingsControlLoaded += new System.Action<eDrawings.Interop.EModelViewControl.EModelViewControl>(this.OnControlLoaded);
-            // 
             // txtMeasurements
             // 
-            this.txtMeasurements.Location = new System.Drawing.Point(598, 12);
+            this.txtMeasurements.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtMeasurements.Location = new System.Drawing.Point(598, 11);
             this.txtMeasurements.Multiline = true;
             this.txtMeasurements.Name = "txtMeasurements";
             this.txtMeasurements.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtMeasurements.Size = new System.Drawing.Size(190, 426);
+            this.txtMeasurements.Size = new System.Drawing.Size(190, 394);
             this.txtMeasurements.TabIndex = 4;
             this.txtMeasurements.Text = "测量结果：";
             // 
             // btnRecordMeasurements
             // 
-            this.btnRecordMeasurements.Location = new System.Drawing.Point(598, 444);
+            this.btnRecordMeasurements.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnRecordMeasurements.Location = new System.Drawing.Point(598, 410);
             this.btnRecordMeasurements.Name = "btnRecordMeasurements";
-            this.btnRecordMeasurements.Size = new System.Drawing.Size(190, 23);
+            this.btnRecordMeasurements.Size = new System.Drawing.Size(190, 21);
             this.btnRecordMeasurements.TabIndex = 5;
             this.btnRecordMeasurements.Text = "记录测量";
             this.btnRecordMeasurements.UseVisualStyleBackColor = true;
             this.btnRecordMeasurements.Click += new System.EventHandler(this.btnRecordMeasurements_Click);
             // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.Location = new System.Drawing.Point(12, 12);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(570, 392);
+            this.panel1.TabIndex = 6;
+            // 
             // FrmMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(797, 476);
+            this.ClientSize = new System.Drawing.Size(797, 439);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnRecordMeasurements);
             this.Controls.Add(this.txtMeasurements);
             this.Controls.Add(this.btnBrowse);
             this.Controls.Add(this.txtFilePath);
             this.Controls.Add(this.btnOpen);
-            this.Controls.Add(this.ctrlEDrw);
             this.Name = "FrmMain";
             this.Text = "WinForm嵌入eDrawing视窗";
             this.ResumeLayout(false);
@@ -114,12 +122,13 @@ namespace EDrawingsHostDemo
 
         #endregion
 
-        private EDrawingsUserControl ctrlEDrw;
+        
         private System.Windows.Forms.Button btnOpen;
         private System.Windows.Forms.TextBox txtFilePath;
         private System.Windows.Forms.Button btnBrowse;
         private System.Windows.Forms.TextBox txtMeasurements;
         private System.Windows.Forms.Button btnRecordMeasurements;
+        private System.Windows.Forms.Panel panel1;
     }
 }
 

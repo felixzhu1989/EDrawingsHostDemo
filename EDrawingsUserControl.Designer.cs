@@ -29,8 +29,16 @@ namespace EDrawingsHostDemo
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // EDrawingsUserControl
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Name = "EDrawingsUserControl";
+            this.Size = new System.Drawing.Size(619, 391);
+            this.ResumeLayout(false);
+
         }
 
         #endregion

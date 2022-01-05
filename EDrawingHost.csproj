@@ -33,11 +33,11 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="eDrawings.Interop.EModelMarkupControl">
-      <HintPath>C:\Program Files\SOLIDWORKS2021 Corp\eDrawings\eDrawings.Interop.EModelMarkupControl.dll</HintPath>
+      <HintPath>C:\Program Files\Common Files\eDrawings2022\eDrawings.Interop.EModelMarkupControl.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
     <Reference Include="eDrawings.Interop.EModelViewControl">
-      <HintPath>C:\Program Files\SOLIDWORKS2021 Corp\eDrawings\eDrawings.Interop.EModelViewControl.dll</HintPath>
+      <HintPath>C:\Program Files\Common Files\eDrawings2022\eDrawings.Interop.EModelViewControl.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
     <Reference Include="System" />
@@ -69,6 +69,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="EDrawingsUserControl.resx">
+      <DependentUpon>EDrawingsUserControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </EmbeddedResource>
