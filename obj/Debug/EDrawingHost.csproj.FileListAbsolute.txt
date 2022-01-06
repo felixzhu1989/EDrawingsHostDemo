@@ -17,3 +17,15 @@ D:\EDrawingsHostDemo\obj\Debug\EDrawingsHostDemo.EDrawingsUserControl.resources
 D:\EDrawingsHostDemo\bin\Debug\EDrawingHost.exe
 D:\EDrawingsHostDemo\bin\Debug\EDrawingHost.pdb
 D:\EDrawingsHostDemo\obj\Debug\EDrawingHost.csproj.AssemblyReference.cache
+E:\CSharp\repos\EDrawingsHostDemo\obj\Debug\EDrawingHost.csproj.AssemblyReference.cache
+E:\CSharp\repos\EDrawingsHostDemo\obj\Debug\EDrawingsHostDemo.EDrawingsUserControl.resources
+E:\CSharp\repos\EDrawingsHostDemo\obj\Debug\EDrawingsHostDemo.FrmMain.resources
+E:\CSharp\repos\EDrawingsHostDemo\obj\Debug\EDrawingHost.Properties.Resources.resources
+E:\CSharp\repos\EDrawingsHostDemo\obj\Debug\EDrawingHost.csproj.GenerateResource.cache
+E:\CSharp\repos\EDrawingsHostDemo\obj\Debug\EDrawingHost.csproj.CoreCompileInputs.cache
+E:\CSharp\repos\EDrawingsHostDemo\obj\Debug\EDrawingHost.exe
+E:\CSharp\repos\EDrawingsHostDemo\obj\Debug\EDrawingHost.pdb
+E:\CSharp\repos\EDrawingsHostDemo\bin\Debug\EDrawingHost.exe
+E:\CSharp\repos\EDrawingsHostDemo\bin\Debug\EDrawingHost.pdb
+E:\CSharp\repos\EDrawingsHostDemo\bin\Debug\DLL\eDrawings.Interop.EModelMarkupControl.dll
+E:\CSharp\repos\EDrawingsHostDemo\bin\Debug\DLL\eDrawings.Interop.EModelViewControl.dll
